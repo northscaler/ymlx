@@ -1,5 +1,5 @@
 FROM node:12.19.0-alpine
-LABEL version=1.0.1
+LABEL version=1.0.2-rc.0
 
 RUN mkdir /ymlx
 COPY ["index.js", "reduce.js", "package.json", "package-lock.json", "test", "/ymlx/"]

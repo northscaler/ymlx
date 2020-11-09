@@ -1,6 +1,6 @@
 {
   "name": "ymlx",
-  "version": "1.0.0-pre.0",
+  "version": "1.0.0-pre.1",
   "description": "Command-line YAML processing tool",
   "repository": "https://gitlab.com/northscaler-public/ymlx",
   "license": "MIT",

@@ -19,9 +19,9 @@
     "format": "standard --fix",
     "lint": "standard --verbose",
     "natives": "npm run linux && npm run macos && npm run win",
-    "linux": "pkg -o dist/linux/ymlx -t node8-linux-x64 index.js",
-    "macos": "pkg -o dist/macos/ymlx -t node8-macos-x64 index.js",
-    "win": "pkg -o dist/win/ymlx.exe -t node8-win-x64 index.js"
+    "linux": "pkg -o dist/linux/ymlx -t node10-linux-x64 index.js",
+    "macos": "pkg -o dist/macos/ymlx -t node10-macos-x64 index.js",
+    "win": "pkg -o dist/win/ymlx.exe -t node10-win-x64 index.js"
   },
   "keywords": [
     "yaml",

@@ -29,7 +29,7 @@
     "cli"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "dependencies": {
     "get-stdin": "8.0.0",

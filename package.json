@@ -1,0 +1,47 @@
+{
+  "name": "ymlx",
+  "version": "1.0.0-pre.0",
+  "description": "Command-line YAML processing tool",
+  "repository": "https://gitlab.com/northscaler-public/ymlx",
+  "license": "MIT",
+  "bin": {
+    "ymlx": "index.js"
+  },
+  "files": [
+    "index.js",
+    "reduce.js"
+  ],
+  "scripts": {
+    "u": "mocha test/*test.js",
+    "test": "nyc --reporter=html mocha test/*test.js",
+    "posttest": "npm run lint && nyc report",
+    "format": "standard --fix",
+    "lint": "standard --verbose",
+    "natives": "npm run linux && npm run macos && npm run win",
+    "linux": "pkg -o dist/linux/ymlx -t node8-linux-x64 index.js",
+    "macos": "pkg -o dist/macos/ymlx -t node8-macos-x64 index.js",
+    "win": "pkg -o dist/win/ymlx.exe -t node8-win-x64 index.js"
+  },
+  "keywords": [
+    "yaml",
+    "yml",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "get-stdin": "8.0.0",
+    "js-yaml": "3.14.0",
+    "meow": "5.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "dirty-chai": "2.0.1",
+    "mocha": "8.2.1",
+    "nyc": "15.1.0",
+    "pkg": "4.4.9",
+    "release-it": "14.2.1",
+    "standard": "16.0.1"
+  }
+}

@@ -1,4 +1,4 @@
-FROM node:8.11.3-alpine
+FROM node:12.19.0-alpine
 LABEL version=1.0.0-pre.0
 
 RUN mkdir /ymlx

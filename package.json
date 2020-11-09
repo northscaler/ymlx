@@ -12,6 +12,7 @@
     "reduce.js"
   ],
   "scripts": {
+    "build": "npm ci && npm t",
     "u": "mocha test/*test.js",
     "test": "nyc --reporter=html mocha test/*test.js",
     "posttest": "npm run lint && nyc report",
